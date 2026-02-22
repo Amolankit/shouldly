@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Overview](README.md)
-* [Contributing](overview.md)
+* [Contributing](../CONTRIBUTING.md)
 
 
 ## Documentation
