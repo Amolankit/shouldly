@@ -12,6 +12,12 @@
     <DebugType>embedded</DebugType>
   </PropertyGroup>
 
+  <!-- Default package metadata that applies to all projects in src. Each value is guarded so
+       per-project settings or CI /p: properties can override them. -->
+  <PropertyGroup>
+    <Copyright Condition=" '$(Copyright)' == '' ">Copyright (c) $([System.DateTime]::Now.Year) Shouldly.</Copyright>
+  </PropertyGroup>
+
   <PropertyGroup Condition="'$(MSBuildProjectName)' == 'Shouldly.DiffEngine' Or '$(MSBuildProjectName)' == 'Shouldly'">
     <Deterministic>true</Deterministic>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
